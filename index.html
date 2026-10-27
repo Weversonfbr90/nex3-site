@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NEX3 · NOC 24x7, Redes e Serviços Gerenciados de TI</title>
+  <meta name="description" content="NOC 24x7, consultoria de redes e serviços gerenciados de TI para provedores e empresas. Monitoramos, antecipamos e resolvemos, para que sua operação não pare.">
+  <meta name="keywords" content="NOC 24x7,monitoramento de redes,serviços gerenciados de TI,gestão de infraestrutura,observabilidade,provedores,NEX3">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NEX3 · NOC 24x7 para provedores e empresas">
+  <meta property="og:description" content="Monitoramento contínuo, resposta a incidentes e engenharia de redes na mesma operação.">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#05080C">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<!-- Símbolo NEX3 (opção A · Refinamento): triângulo dividido em 3 partes iguais -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <mask id="nex3-cortes" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="88">
+      <rect width="100" height="88" fill="#fff"/>
+      <path d="M50 31.4 50 -10M50 31.4 94 56.8M50 31.4 6 56.8" stroke="#000" stroke-width="5"/>
+    </mask>
+  </defs>
+  <symbol id="nex3-simbolo" viewBox="0 0 100 88">
+    <path d="M6 6H94L50 82.2Z" fill="currentColor" stroke="currentColor" stroke-width="8" stroke-linejoin="round" mask="url(#nex3-cortes)"/>
+  </symbol>
+</svg>
+
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <a href="#inicio" class="marca" aria-label="NEX3 Tecnologia, início">
+    <svg class="marca-simbolo" aria-hidden="true"><use href="#nex3-simbolo"/></svg>
+    <span class="marca-nome"><span class="marca-nex">NEX<b>3</b></span><span class="marca-sub">Tecnologia</span></span>
+  </a>
+  <nav class="menu" aria-label="Seções">
+    <a href="#servicos">Serviços</a>
+    <a href="#cobertura">Monitoramento</a>
+    <a href="#noc">NOC 24x7</a>
+    <a href="#implantacao">Implantação</a>
+    <a href="#faq">Dúvidas</a>
+  </nav>
+  <a href="#contato" class="botao botao--pequeno">Falar com especialista</a>
+</header>
+
+<main id="conteudo">
+
+  <!-- ABERTURA: mapa de rede vivo -->
+  <section id="inicio" class="hero">
+    <canvas class="hero-rede" aria-hidden="true"></canvas>
+    <div class="hero-conteudo">
+      <p class="sobretitulo"><span class="ao-vivo"></span>Operação 24 horas · 7 dias</p>
+      <h1>O desvio começa na rede.<br><em>A resposta começa no NOC.</em></h1>
+      <p class="hero-texto">A NEX3 observa continuamente a infraestrutura que mantém provedores e empresas conectados. Quando a disponibilidade ou o desempenho fogem do padrão, o evento ganha contexto técnico e um plano de resposta.</p>
+      <div class="acoes">
+        <a href="#noc" class="botao">Conhecer o NOC</a>
+        <a href="#contato" class="botao botao--linha">Falar com a NEX3</a>
+      </div>
+    </div>
+    <aside class="hero-painel" aria-label="Painel ilustrativo de operação">
+      <div class="hp-topo">
+        <span>NOC · NEX3</span>
+        <span class="hp-relogio" data-relogio>--:--:--</span>
+      </div>
+      <dl class="hp-status">
+        <div><dt>Enlaces</dt><dd data-hp-enlaces>—</dd></div>
+        <div><dt>Em alerta</dt><dd data-hp-alerta>0</dd></div>
+        <div><dt>Plantão</dt><dd class="ok">Ativo</dd></div>
+      </dl>
+      <ol class="hp-log" data-hp-log aria-live="off"></ol>
+      <p class="hp-nota">Simulação ilustrativa</p>
+    </aside>
+  </section>
+
+  <!-- NÚMEROS -->
+  <section class="numeros" aria-label="NEX3 em números">
+    <div class="numero"><strong data-contar="25000">0</strong><span>clientes finais satisfeitos</span></div>
+    <div class="numero"><strong data-contar="169">0</strong><span>projetos concluídos</span></div>
+    <div class="numero"><strong data-contar="37000">0</strong><span>suportes solucionados</span></div>
+    <div class="numero numero--cafe"><strong data-cafe>5.726</strong><span><i class="ao-vivo" aria-hidden="true"></i>cafés consumidos no plantão</span></div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="secao">
+    <header class="secao-cabeca revelar">
+      <p class="sobretitulo">01 · O que fazemos</p>
+      <h2>Monitoramento, resposta e engenharia na mesma operação</h2>
+      <p>Quem acompanha os incidentes entende onde a rede degrada e transforma esse histórico em melhoria.</p>
+    </header>
+    <div class="servicos">
+      <article class="servico servico--destaque revelar">
+        <span class="servico-cod">SVC·01</span>
+        <h3>NOC 24x7</h3>
+        <p>Uma equipe de plantão acompanha os sinais da infraestrutura, aplica procedimentos operacionais acordados e coordena a passagem do incidente entre os níveis técnicos, atuando como extensão da equipe interna.</p>
+        <div class="servico-pulso" aria-hidden="true"><svg viewBox="0 0 300 60" preserveAspectRatio="none"><path d="M0 30 H90 L104 30 L112 8 L124 52 L134 22 L142 30 H300"/></svg></div>
+      </article>
+      <article class="servico revelar">
+        <span class="servico-cod">SVC·02</span>
+        <h3>Monitoramento e observabilidade</h3>
+        <p>Telemetria integrada de rede, conectividade, capacidade computacional e serviços essenciais. Painéis, limiares calibrados e relatórios operacionais ajudam a separar variação normal de risco real.</p>
+      </article>
+      <article class="servico revelar">
+        <span class="servico-cod">SVC·03</span>
+        <h3>Consultoria de redes</h3>
+        <p>Revisão da arquitetura, capacidade e configuração dos serviços de rede. Avaliamos o ambiente, identificamos riscos e gargalos e entregamos um plano executável, com prioridade e sequência de implantação.</p>
+      </article>
+      <article class="servico revelar">
+        <span class="servico-cod">SVC·04</span>
+        <h3>Resposta a incidentes</h3>
+        <p>Do primeiro alerta à normalização: classificação, triagem, diagnóstico, ação aplicável e escalonamento para quem tem alçada. O incidente vira histórico, com causa e reincidência acompanhadas.</p>
+      </article>
+      <article class="servico revelar">
+        <span class="servico-cod">SVC·05</span>
+        <h3>Segurança e continuidade</h3>
+        <p>Firewall, segmentação, políticas de acesso e rotinas de backup verificadas. O objetivo não é prometer que nada acontecerá, mas reduzir exposição e preparar a operação para se recuperar com controle.</p>
+      </article>
+      <article class="servico revelar">
+        <span class="servico-cod">SVC·06</span>
+        <h3>Serviços gerenciados de TI</h3>
+        <p>Servidores, serviços críticos e ambientes em nuvem acompanhados de forma contínua, com rotinas definidas, registro das ocorrências e visão clara da saúde da infraestrutura.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- COBERTURA: radar interativo -->
+  <section id="cobertura" class="secao secao--cobertura">
+    <header class="secao-cabeca revelar">
+      <p class="sobretitulo">02 · Cobertura do monitoramento</p>
+      <h2>Visibilidade sobre o que sustenta sua operação</h2>
+      <p>O escopo é desenhado a partir dos ativos, serviços e dependências que realmente afetam o negócio. Assim, a equipe recebe contexto para agir, e não uma fila de alarmes desconectados.</p>
+    </header>
+    <div class="cobertura revelar">
+      <div class="radar" aria-hidden="true">
+        <svg viewBox="-110 -110 220 220">
+          <g class="radar-grade">
+            <circle r="100"/><circle r="72"/><circle r="44"/><circle r="16"/>
+            <path d="M0-100V100"/>
+          </g>
+          <g class="radar-setores" data-setores></g>
+          <g class="radar-varredura"><path d="M0 0 L0 -100 A100 100 0 0 1 50 -86.6 Z"/></g>
+          <circle class="radar-centro" r="4"/>
+        </svg>
+        <div class="radar-rotulo" data-radar-rotulo>Camada de rede</div>
+      </div>
+      <div class="camadas" role="tablist" aria-label="Camadas monitoradas">
+        <button role="tab" aria-selected="true" class="camada" data-camada="0">
+          <span class="camada-num">01</span><strong>Camada de rede</strong>
+          <span class="camada-txt">Interfaces, utilização, erros e disponibilidade dos equipamentos responsáveis por encaminhar e distribuir o tráfego.</span>
+        </button>
+        <button role="tab" aria-selected="false" class="camada" data-camada="1">
+          <span class="camada-num">02</span><strong>Circuitos e conectividade</strong>
+          <span class="camada-txt">Latência, perda de pacotes e condição dos caminhos que conectam unidades, usuários e ambientes digitais.</span>
+        </button>
+        <button role="tab" aria-selected="false" class="camada" data-camada="2">
+          <span class="camada-num">03</span><strong>Computação e virtualização</strong>
+          <span class="camada-txt">Capacidade, saúde e disponibilidade dos recursos que sustentam cargas de trabalho e aplicações internas.</span>
+        </button>
+        <button role="tab" aria-selected="false" class="camada" data-camada="3">
+          <span class="camada-num">04</span><strong>Perímetro e segurança</strong>
+          <span class="camada-txt">Estado dos dispositivos de proteção, pontos de passagem críticos e sinais operacionais incluídos na cobertura.</span>
+        </button>
+        <button role="tab" aria-selected="false" class="camada" data-camada="4">
+          <span class="camada-num">05</span><strong>Serviços digitais</strong>
+          <span class="camada-txt">DNS, autenticação, páginas e APIs acompanhados pela experiência entregue ao usuário, não apenas pelo equipamento onde são executados.</span>
+        </button>
+        <button role="tab" aria-selected="false" class="camada" data-camada="5">
+          <span class="camada-num">06</span><strong>Recursos em nuvem</strong>
+          <span class="camada-txt">Componentes distribuídos analisados junto com as conexões, serviços locais e dependências que completam a operação.</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOC EM OPERAÇÃO: incidente que avança com a rolagem -->
+  <section id="noc" class="secao secao--noc">
+    <header class="secao-cabeca revelar">
+      <p class="sobretitulo">03 · NOC 24x7 em operação</p>
+      <h2>Entre o alerta e a normalização, existe um processo</h2>
+      <p>Quando um evento crítico aparece, a NEX3 valida o impacto, conduz o diagnóstico e mantém o incidente em acompanhamento até que exista uma resolução ou um responsável claramente acionado.</p>
+    </header>
+    <div class="noc" data-noc>
+      <ol class="noc-passos">
+        <li class="noc-passo" data-passo="0"><span>01</span><div><h3>Validar o evento</h3><p>Confirmamos o sinal, eliminamos alarmes sem ação e identificamos quais ativos e serviços foram afetados.</p></div></li>
+        <li class="noc-passo" data-passo="1"><span>02</span><div><h3>Diagnosticar o impacto</h3><p>Correlacionamos sintomas, dependências e histórico para separar a causa provável dos efeitos do incidente.</p></div></li>
+        <li class="noc-passo" data-passo="2"><span>03</span><div><h3>Executar a tratativa</h3><p>Aplicamos a ação prevista no procedimento e dentro do escopo de acesso acordado com o cliente.</p></div></li>
+        <li class="noc-passo" data-passo="3"><span>04</span><div><h3>Acionar e escalar</h3><p>Quando outra equipe ou fornecedor precisa atuar, entregamos o contexto e avançamos pela matriz de alçada.</p></div></li>
+        <li class="noc-passo" data-passo="4"><span>05</span><div><h3>Acompanhar e registrar</h3><p>Mantemos o incidente sob acompanhamento, registramos as ações e consolidamos o histórico após a normalização.</p></div></li>
+      </ol>
+      <div class="noc-palco">
+        <article class="incidente" aria-label="Exemplo de fluxo operacional">
+          <header class="inc-topo">
+            <span class="inc-tipo">Exemplo de fluxo operacional</span>
+            <span class="inc-estado" data-inc-estado>Evento recebido</span>
+          </header>
+          <h3>Perda de conectividade em enlace crítico</h3>
+          <div class="inc-enlace" aria-hidden="true">
+            <span class="inc-no">POP A</span>
+            <span class="inc-linha" data-inc-linha><i></i></span>
+            <span class="inc-no">POP B</span>
+          </div>
+          <dl class="inc-campos">
+            <div><dt>Criticidade</dt><dd data-inc-crit>—</dd></div>
+            <div><dt>Procedimento</dt><dd data-inc-proc>—</dd></div>
+            <div><dt>Responsável</dt><dd data-inc-resp>—</dd></div>
+          </dl>
+          <ol class="inc-tempo" data-inc-tempo>
+            <li data-t="0"><time>00:00</time>Evento recebido pelo NOC</li>
+            <li data-t="1"><time>00:02</time>Impacto e ativos afetados validados</li>
+            <li data-t="2"><time>00:07</time>Procedimento de diagnóstico executado</li>
+            <li data-t="3"><time>Agora</time>Escalonamento e retorno em acompanhamento</li>
+          </ol>
+        </article>
+      </div>
+    </div>
+    <ul class="garantias revelar">
+      <li>Evento validado e classificado antes do acionamento</li>
+      <li>Comunicação com impacto, contexto e próximo passo</li>
+      <li>Registro das ações, horários e responsáveis envolvidos</li>
+      <li>Encerramento com histórico para análise de reincidência</li>
+    </ul>
+  </section>
+
+  <!-- IMPLANTAÇÃO -->
+  <section id="implantacao" class="secao">
+    <header class="secao-cabeca revelar">
+      <p class="sobretitulo">04 · Entrada em operação</p>
+      <h2>Um NOC configurado para a sua rede</h2>
+      <p>A cobertura nasce do entendimento do ambiente. Antes do monitoramento contínuo, alinhamos ativos, riscos, responsáveis e procedimentos para evitar alertas sem destino.</p>
+    </header>
+    <ol class="trilha" data-trilha>
+      <li class="revelar"><span class="trilha-no"></span><small>01</small><h3>Mapear</h3><p>Levantamos ativos, serviços críticos, dependências, riscos e responsáveis técnicos.</p></li>
+      <li class="revelar"><span class="trilha-no"></span><small>02</small><h3>Instrumentar</h3><p>Conectamos as fontes de dados e organizamos a visibilidade necessária para cada item do escopo.</p></li>
+      <li class="revelar"><span class="trilha-no"></span><small>03</small><h3>Calibrar</h3><p>Ajustamos limiares, prioridades, janelas, procedimentos e quem deve ser envolvido em cada cenário.</p></li>
+      <li class="revelar"><span class="trilha-no"></span><small>04</small><h3>Operar</h3><p>Validamos o fluxo com a equipe do cliente e iniciamos a vigilância contínua com acompanhamento.</p></li>
+    </ol>
+    <div class="manifesto revelar">
+      <p class="sobretitulo">Operação orientada por processo</p>
+      <blockquote>A ferramenta enxerga.<br><em>O processo faz a operação responder.</em></blockquote>
+      <p>A tecnologia coleta sinais e identifica desvios. O valor do NOC aparece quando cada evento encontra criticidade, procedimento, responsável e próximo passo claramente definidos.</p>
+      <ul class="checks">
+        <li>Escopo adaptado à arquitetura e à criticidade da rede</li>
+        <li>Alertas calibrados para reduzir ruído operacional</li>
+        <li>Matriz de comunicação e escalonamento acordada</li>
+        <li>Indicadores e relatórios para acompanhar a evolução</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="secao secao--faq">
+    <header class="secao-cabeca revelar">
+      <p class="sobretitulo">05 · Dúvidas comuns</p>
+      <h2>Perguntas frequentes</h2>
+    </header>
+    <div class="faq revelar">
+      <details>
+        <summary>O NOC substitui minha equipe interna?</summary>
+        <p>Não. Ele atua como extensão do seu time, ampliando a capacidade de monitoramento e de resposta a incidentes.</p>
+      </details>
+      <details>
+        <summary>O NOC atende apenas grandes empresas?</summary>
+        <p>Não. O escopo é dimensionado pela quantidade de ativos, pela arquitetura e pela criticidade da operação, de provedores regionais a ambientes corporativos com serviços essenciais.</p>
+      </details>
+      <details>
+        <summary>Que partes do ambiente podem entrar na cobertura?</summary>
+        <p>A cobertura pode reunir a camada de rede, circuitos, recursos computacionais, dispositivos de proteção, serviços digitais e componentes em nuvem. A composição final nasce do levantamento técnico e das prioridades operacionais.</p>
+      </details>
+      <details>
+        <summary>Como funciona a resposta a incidentes?</summary>
+        <p>Antes de envolver outra equipe, o NOC confirma o impacto e posiciona o evento na prioridade operacional correta. Em seguida, aplica o procedimento disponível ou encaminha o caso, com diagnóstico e histórico, ao nível responsável pela resolução.</p>
+      </details>
+      <details>
+        <summary>Consigo acompanhar relatórios de desempenho?</summary>
+        <p>Sim. Dashboards e relatórios consolidam disponibilidade, desempenho, ocorrências e reincidências, oferecendo base para correções e decisões de investimento.</p>
+      </details>
+      <details>
+        <summary>Como é feita a implantação do monitoramento?</summary>
+        <p>Começamos pelo levantamento dos ativos, serviços críticos, responsáveis e regras de acionamento. Depois instrumentamos o ambiente, calibramos os alertas, validamos os procedimentos e iniciamos a operação acompanhada.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CONTATO: envia para /api/contato (mesmo contrato do site anterior) -->
+  <section id="contato" class="secao secao--contato">
+    <div class="contato">
+      <header class="contato-cabeca revelar">
+        <p class="sobretitulo">06 · Fale conosco</p>
+        <h2>Coloque sua rede sob vigilância contínua</h2>
+        <p>Conte quais ativos sustentam sua operação, onde estão os principais riscos e como sua equipe atua hoje. A partir desse cenário, dimensionamos a cobertura adequada para sua rede.</p>
+      </header>
+      <form class="form revelar" novalidate>
+        <div class="campo">
+          <label for="f-nome">Seu nome</label>
+          <input id="f-nome" name="nome" autocomplete="name" maxlength="120" required>
+        </div>
+        <div class="campo">
+          <label for="f-email">Seu e-mail</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" maxlength="160" required>
+        </div>
+        <div class="campo">
+          <label for="f-empresa">Empresa</label>
+          <input id="f-empresa" name="empresa" autocomplete="organization" maxlength="160">
+        </div>
+        <div class="campo">
+          <label for="f-assunto">Assunto</label>
+          <input id="f-assunto" name="assunto" maxlength="160">
+        </div>
+        <div class="campo campo--inteiro">
+          <label for="f-mensagem">Descreva sua necessidade</label>
+          <textarea id="f-mensagem" name="mensagem" rows="5" maxlength="5000" required></textarea>
+        </div>
+        <input type="text" name="website" class="pote" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label class="aceite campo--inteiro">
+          <input type="checkbox" name="privacidade" required>
+          <span>Li o <a href="/privacidade">Aviso de Privacidade</a> e estou ciente do uso dos dados para o retorno deste contato.</span>
+        </label>
+        <button type="submit" class="botao campo--inteiro">Enviar mensagem</button>
+        <p class="form-status campo--inteiro" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <div class="rodape-grade">
+    <div>
+      <a href="#inicio" class="marca" aria-label="NEX3 Tecnologia, voltar ao início">
+        <svg class="marca-simbolo" aria-hidden="true"><use href="#nex3-simbolo"/></svg>
+        <span class="marca-nome"><span class="marca-nex">NEX<b>3</b></span><span class="marca-sub">Tecnologia</span></span>
+      </a>
+      <p>NOC 24x7, consultoria de redes e serviços gerenciados de TI. Monitoramos, antecipamos e resolvemos, para que sua operação não pare.</p>
+    </div>
+    <nav aria-label="Navegação do rodapé">
+      <h3>Navegação</h3>
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#cobertura">Monitoramento</a>
+      <a href="#noc">NOC 24x7</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div>
+      <h3>Serviços</h3>
+      <ul>
+        <li>NOC 24x7</li>
+        <li>Monitoramento e observabilidade</li>
+        <li>Consultoria de redes</li>
+        <li>Resposta a incidentes</li>
+        <li>Segurança e continuidade</li>
+        <li>Serviços gerenciados de TI</li>
+      </ul>
+    </div>
+  </div>
+  <div class="rodape-base">
+    <span>© <span data-ano>2026</span> NEX3. Todos os direitos reservados.</span>
+    <a href="/privacidade">Aviso de Privacidade</a>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
